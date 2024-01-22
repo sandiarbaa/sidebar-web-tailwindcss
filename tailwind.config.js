@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./pages/about.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: "Poppins",
+      },
+    },
   },
   plugins: [],
 };

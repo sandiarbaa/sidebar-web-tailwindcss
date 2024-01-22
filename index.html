@@ -1,12 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar Web</title>
-    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Home | TKD</title>
+    <link rel="stylesheet" href="public/css/final.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Sidebar Web</h1>
+  <body class="max-w-7xl mx-auto relative">
+    <!-- Navbar -->
+    <!-- Color Logo || Hamburger & Close Icon -->
+    <section
+      id="navbar"
+      class="flex items-center justify-between p-5 shadow fixed left-0 right-0 bg-white md:px-8"
+    >
+      <div
+        class="hidden md:block font-bold tracking-widest uppercase text-red-700 text-xl"
+      >
+        sap tkd academy
+      </div>
+
+      <!-- Color Logo -->
+      <div class="flex gap-x-2">
+        <div class="w-4 h-4 bg-red-500 rounded-full"></div>
+        <div class="w-4 h-4 bg-black rounded-full"></div>
+        <div class="w-4 h-4 bg-blue-700 rounded-full"></div>
+      </div>
+
+      <!-- Hamburger Icon & Close Icon -->
+      <div id="hamburger-menu" class="cursor-pointer md:hidden">
+        <img
+          src="public/img/hamburger-menu.png"
+          alt="hamburger-menu"
+          id="hamburger-menu-img"
+          class="h-5"
+        />
+        <img
+          src="public/img/cancel.png"
+          alt="close"
+          id="close-img"
+          class="h-5 hidden"
+        />
+      </div>
+    </section>
+    <!-- Nav Menu -->
+    <section
+      id="nav-menu"
+      class="fixed left-[-100%] w-[60%] h-full top-0 bg-slate-600 text-white opacity-95 p-5 md:hidden"
+    >
+      <h1
+        class="font-semibold text-lg mb-2 tracking-widest sm:text-xl uppercase"
+      >
+        sap tkd academy
+      </h1>
+      <li
+        class="list-none border-b border-slate-400 py-2 text-slate-300 sm:text-lg"
+      >
+        <a href="index.html">Home</a>
+      </li>
+      <li
+        class="list-none border-b border-slate-400 py-2 text-slate-300 sm:text-lg"
+      >
+        <a href="pages/about.html">About</a>
+      </li>
+    </section>
+    <!-- End of Navbar -->
+
+    <!-- Content -->
+    <main class="min-h-screen">
+      <div class="md:hidden pt-20">
+        <section class="mx-auto mb-40 mt-10" id="home">
+          <div class="px-8">
+            <img
+              src="public/img/tkd-1.jpg"
+              alt="tkd-1-mobile"
+              class="h-48 mx-auto rounded-md w-full object-cover object-center"
+            />
+          </div>
+          <div class="px-8 mt-5">
+            <div class="flex gap-x-3 font-poppins">
+              <span class="font-bold text-3xl text-red-500">TAE</span>
+              <span class="font-bold text-3xl">KWON</span>
+              <span class="font-bold text-3xl text-blue-700">DO</span>
+            </div>
+            <p class="text-sm mt-1 mb-10">
+              Selamat bergabung di dunia Taekwondo, tempat di mana semangat,
+              disiplin, dan kekuatan fisik serta mental bersatu. Taekwondo, seni
+              bela diri asal Korea, bukan hanya sekadar suatu bentuk latihan
+              fisik, melainkan suatu perjalanan pribadi yang membentuk karakter
+              dan keterampilan sepanjang hidup.
+            </p>
+            <a
+              href="pages/about.html"
+              class="bg-red-700 hover:bg-red-900 duration-150 text-white font-semibold px-3 py-2 uppercase rounded-md tracking-widest"
+              >Learn More</a
+            >
+          </div>
+        </section>
+      </div>
+      <div class="hidden md:block md:w-full md:h-full">
+        <div class="w-3/12 float-left h-screen px-3 border-2">
+          <div class="pt-16">
+            <li
+              class="list-none border-b border-slate-500 py-2 text-slate-700 font-semibold p-5 sm:text-lg"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="list-none border-b border-slate-500 py-2 text-slate-700 font-semibold p-5 sm:text-lg"
+            >
+              <a href="pages/about.html">About</a>
+            </li>
+          </div>
+        </div>
+
+        <!-- Content Home -->
+        <div class="w-9/12 float-right h-screen px-8 overflow-y-scroll">
+          <div class="flex h-full items-center">
+            <!-- Hero Text -->
+            <div class="w-1/2 pr-10">
+              <div class="flex gap-x-3 font-poppins">
+                <span class="font-bold text-3xl text-red-500">TAE</span>
+                <span class="font-bold text-3xl">KWON</span>
+                <span class="font-bold text-3xl text-blue-700">DO</span>
+              </div>
+              <p class="text-lg mt-1 mb-10">
+                Selamat bergabung di dunia Taekwondo, tempat di mana semangat,
+                disiplin, dan kekuatan fisik serta mental bersatu. Taekwondo,
+                seni bela diri asal Korea, bukan hanya sekadar suatu bentuk
+                latihan fisik, melainkan suatu perjalanan pribadi yang membentuk
+                karakter dan keterampilan sepanjang hidup.
+              </p>
+              <a
+                href="pages/about.html"
+                class="bg-red-700 hover:bg-red-900 duration-150 px-8 py-2 text-white font-bold uppercase rounded-md tracking-widest"
+                >Learn More</a
+              >
+            </div>
+            <!-- End of Hero Text -->
+
+            <!-- Hero Image -->
+            <div class="w-1/2">
+              <div class="mb-2">
+                <img
+                  src="public/img/tkd-1.jpg"
+                  alt="tkd"
+                  class="rounded-lg h-52 w-full object-cover"
+                />
+              </div>
+              <div class="flex justify-between gap-x-2">
+                <img
+                  src="public/img/tkd-2.avif"
+                  alt="tkd-2"
+                  class="w-1/2 rounded-lg"
+                />
+                <img
+                  src="public/img/tkd-3.jpg"
+                  alt="tkd-3"
+                  class="w-1/2 rounded-lg"
+                />
+              </div>
+            </div>
+            <!-- End of Hero Image -->
+            <div class=""></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End of Content -->
+
+    <script>
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navMenu = document.getElementById("nav-menu");
+
+      const hamburgerMenuImg = document.getElementById("hamburger-menu-img");
+      const closeImg = document.getElementById("close-img");
+
+      hamburgerMenu.addEventListener("click", function () {
+        hamburgerMenuImg.classList.toggle("hidden");
+        closeImg.classList.toggle("hidden");
+        navMenu.classList.toggle("left-[-100%]");
+        navMenu.classList.toggle("left-0");
+        navMenu.classList.toggle("ease-in-out");
+        navMenu.classList.toggle("duration-500");
+      });
+    </script>
   </body>
 </html>
